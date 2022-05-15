@@ -6,39 +6,47 @@
 }
 
 body {
-    background-color: #fafafa;
+    /* background-color: #fafafa; */
     overflow-x: hidden;
+    background-color: rgb(134, 132, 132);
 }
 
 .swipyy {
-    margin-top: 15px;
+    overflow-x: hidden;
+    background-color: #fafafa;
+    max-width: 700px;
+    margin: auto;
 }
 
 .wifi {
     width: 300px;
     height: 300px;
     float: right;
-    transform: translateX(54%) rotate(-12deg) translateY(-43%);
+    transform: translateX(54%) rotate(-12deg) translateY(-47%);
 }
 
 .swipyy-container {
     padding-left: 30px;
 }
 
+.logo-box {
+    margin-top: 30px;
+}
+
 .logo {
-    width: 97px;
-    height: 97px;
+    width: 50px;
+    height: 50px;
 }
 
 .img-logo-name {
-    width: 253px;
-    height: 97px;
+    width: 150px;
+    height: 55px;
 }
 
 .logo-pip {
     display: inline-block;
     width: 1px;
-    height: 97px;
+    height: 50px;
     background: #8055F0;
     margin: 0;
     margin-right: 15px;
@@ -46,14 +54,15 @@ body {
 
 .verification-title {
     color: #8055F0;
-    font-size: 55px;
+    font-size: 25px;
     letter-spacing: 1.77px;
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .message-content {
-    font-size: 27px;
+    font-size: 20px;
+    /* display: inline-block; */
 }
 
 .verification-number-container {
@@ -83,7 +92,7 @@ body {
     background: #8055f0;
     border: none;
     outline: none;
-    font-size: 27px;
+    font-size: 20px;
     padding: 15px 60px;
     border-radius: 80px;
 }
@@ -93,15 +102,15 @@ body {
 }
 
 .social-icon {
-    width: 95px;
-    height: 97px;
+    width: 55px;
+    height: 57px;
 }
 
 .div-line {
     width: 100px;
     height: 1px;
     display: inline-block;
-    padding-bottom: 48px
+    padding-bottom: 28px;
 }
 
 .div-line p {
@@ -118,23 +127,29 @@ body {
 .youtube {
     display: inline-block;
     background: #8055f0;
-    width: 95px;
-    height: 97px;
-    border-radius: 39px;
+    width: 55px;
+    height: 57px;
+    border-radius: 22px;
     overflow: hidden;
 }
 
 .youtube img {
-    margin: 19%;
+    margin: 19% 15% 0;
+    width: 70%;
 }
 
 .swipyysa {
     font-family: Poppins;
-    font-size: 46px;
+    font-size: 38px;
     font-weight: 600;
     letter-spacing: 0.92px;
     color: #8055f0;
     display: inline-block;
-    transform: translateY(-27px);
-    margin-left: 25px;
+    transform: translateY(-15px);
+    margin-left: 15px;
 }
+
+
+/* .message-content.test {
+    font-size: 20px;
+} */
