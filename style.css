@@ -62,7 +62,8 @@ body {
 
 .message-content {
     font-size: 20px;
-    /* display: inline-block; */
+    display: inline-block;
+    margin-top: -70px;
 }
 
 .verification-number-container {
