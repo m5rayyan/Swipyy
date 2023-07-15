@@ -9,56 +9,57 @@
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Noto+Kufi+Arabic:wght@400;500;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,400;1,700&family=Reem+Kufi&family=Roboto:wght@500&display=swap');
+
     * {
         font-family: Poppins;
         box-sizing: border-box;
         margin: 0;
         padding: 0;
     }
-    
+
     body {
         background-color: #fafafa;
         overflow-x: hidden;
     }
-    
+
     .swipyy {
         overflow-x: hidden;
         background-color: #fafafa;
         max-width: 700px;
         margin: auto;
     }
-    
+
     .wifi {
         width: 300px;
         height: 300px;
         float: right;
         transform: translateX(61%) rotate(-12deg) translateY(-72%);
     }
-    
+
     .swipyy-container {
         padding-left: 30px;
     }
-    
+
     .logo-box {
         overflow: hidden;
         height: 92px;
     }
-    
+
     .logo {
         width: 50px;
         height: 50px;
         display: inline-block;
     }
-    
+
     .logo img {
         width: 100%;
     }
-    
+
     .img-logo-name {
         width: 150px;
         height: 55px;
     }
-    
+
     .logo-pip {
         display: inline-block;
         width: 1px;
@@ -67,7 +68,7 @@
         margin-right: 15px;
         background-color: #8055f0;
     }
-    
+
     .verification-title {
         font-size: 25px;
         letter-spacing: 1.77px;
@@ -75,21 +76,25 @@
         margin-bottom: 50px;
         color: #8055f0;
     }
-    
+
     .logo-and-name {
         margin-top: 30px;
+        display: flex;
+        align-items: center;
+        display: flex;
+        align-items: center;
     }
-    
+
     .message-content {
         font-size: 20px;
     }
-    
+
     .verification-number-container {
         text-align: center;
         margin-top: 60px;
         margin-bottom: 90px;
     }
-    
+
     .verification-number-box {
         background-color: #fff;
         width: 60px;
@@ -101,11 +106,11 @@
         margin-right: 10px;
         color: #8055f0;
     }
-    
+
     .verification-btn {
         text-align: center;
     }
-    
+
     .verification-btn button[type="submit"] {
         color: #fff;
         border: none;
@@ -114,36 +119,46 @@
         padding: 15px 60px;
         border-radius: 80px;
         background-color: #8055f0;
+        cursor: pointer;
     }
-    
+
     .social-media-container {
         margin-top: 250px;
     }
-    
+
     .social-icon {
         width: 55px;
         height: 57px;
         display: inline-block;
     }
-    
+
+    .logo-and-name .logo-link,
+    .social-icon .social-link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .div-line {
         width: 100px;
         height: 1px;
         display: inline-block;
         padding-bottom: 28px;
     }
-    
+
     .div-line p {
         width: 100%;
         height: 1px;
         margin: 0;
         background-color: #8055f0;
     }
-    
+
     .twitter {
         margin-left: 10px;
     }
-    
+
     .youtube {
         display: inline-block;
         width: 55px;
@@ -152,21 +167,21 @@
         overflow: hidden;
         background-color: #8055f0;
     }
-    
+
     .youtube img {
         margin: 19% 15% 0;
         width: 70%;
     }
-    
+
     .social-icon {
         width: 55px;
         height: 57px;
     }
-    
+
     .social-icon img {
         width: 100%;
     }
-    
+
     .swipyysa {
         font-size: 38px;
         font-weight: 600;
@@ -176,63 +191,76 @@
         margin-left: 15px;
         color: #8055f0;
     }
-    
+
     @media(max-width:576px) {
         .wifi {
             width: 150px;
             height: 150px;
             transform: translateX(60%) rotate(-12deg) translateY(-84%);
         }
+
         .message-content {
             display: block;
             margin-top: 0;
             font-size: 16px;
         }
+
         .verification-btn {
             padding-right: 10px;
         }
+
         .verification-btn button[type="submit"] {
             font-size: 18px;
             padding: 15px 55px;
         }
+
         .swipyy-container {
             padding-left: 15px;
         }
+
         .social-icon {
             width: 35px;
             height: 37px;
         }
+
         .div-line {
             padding-bottom: 19px;
             width: 55px;
         }
+
         .youtube {
             width: 35px;
             height: 37px;
             border-radius: 14px;
         }
+
         .swipyysa {
             font-size: 25px;
             transform: translateY(-10px);
             margin-left: 0;
         }
+
         .verification-number-box {
             width: 50px;
             height: 50px;
             font-size: 29px;
         }
+
         .verification-title {
             font-size: 23px;
             margin-bottom: 35px;
         }
+
         .social-media-container {
             margin-top: 200px;
         }
+
         .logo-box {
             margin-top: 0px;
             overflow: hidden;
             height: 75px;
         }
+
         .logo-and-name {
             width: fit-content;
             margin-top: 15px;
@@ -247,11 +275,16 @@
                 <div class="logo-and-name">
 
                     <div class="logo">
-                        <img src="logo.png" alt="logo">
+                        <a class="logo-link" href="https://www.swipyy.com/">
+                            <img src="logo.png" alt="logo">
+                        </a>
                     </div>
                     <p class="logo-pip"></p>
-                    <img src="3.png" alt="Logo name" class="img-logo-name">
-                    </svg>
+                    <div class="logo-name-box">
+                        <a class="logo-link" href="https://www.swipyy.com/">
+                            <img src="3.png" alt="Logo name" class="img-logo-name">
+                        </a>
+                    </div>
                 </div>
                 <img src="wifi.png" alt="wifi" class="wifi">
             </div>
@@ -259,7 +292,8 @@
                 Swipyy Verification Code
             </h1>
 
-            <p class="message-content">Hi Your Name, <br> Thanks for signing up to swipyy, great to have you! <br> Please enter the following verification code to verify your email:</p>
+            <p class="message-content">Hi Your Name, <br> Thanks for signing up to swipyy, great to have you! <br>
+                Please enter the following verification code to verify your email:</p>
             <div class="verification-number-container">
                 <p class="verification-number-box">5</p>
                 <p class="verification-number-box">6</p>
@@ -277,17 +311,25 @@
             </div>
 
             <div class="social-icon">
-                <img src="twitter.png" alt="" class="instagram">
+                <a class="social-link" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="twitter.png" alt="twitter" class="instagram">
+                </a>
             </div>
             <div class="social-icon">
-                <img src="facebook.png" alt="" class="instagram">
+                <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="facebook.png" alt="facebook" class="instagram">
+                </a>
             </div>
             <div class="youtube">
-                <img src="yt.png">
+                <a class="social-link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="yt.png" alt="youtube">
+                </a>
 
             </div>
             <div class="social-icon">
-                <img src="instagram.png" alt="" class="instagram">
+                <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="instagram.png" alt="instagram" class="instagram">
+                </a>
             </div>
 
 
